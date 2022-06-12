@@ -1,0 +1,41 @@
+.signup-col {
+    margin: 0px 16px 0px 16px;
+    padding-bottom: 20px;
+  }
+  .Upload-coll {
+    margin: 0px 16px 0px 16px;
+    padding-bottom: 20px;
+  }
+  .submit-btn{
+    background:  #302f2f;
+  }
+  .submit-btn1{
+    background:  gray;
+    position: absolute; 
+    color: white;
+    right: 0;
+  
+  }
+  .circular--square {
+    border-radius: 50%;
+  }
+  .title{
+    text-align: left;
+  }
+  .circular--square {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+  }
+  .process {
+    color: #07b4af;
+    border: solid 0.2px;
+    border-radius: 10px; 
+    text-align: center;
+    padding: 2%;
+  
+    }
+    ion-input {
+      width: 50%;
+    }

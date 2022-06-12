@@ -1,0 +1,16 @@
+{
+  "name": "ISIApp",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular",
+  "proxies": [{
+    "path": "/camunda",
+    "proxyUrl": "http://digitalisi.tn:8080/engine-rest/"
+},
+{
+  "path": "/form",
+  "proxyUrl": "http://digitalisi.tn:8080/engine-rest/process-definition"
+}]
+}

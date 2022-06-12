@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> <ion-icon name="arrow-undo-outline" [routerLink]="['/home']" color="secondary"></ion-icon> </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <br>
+  <ion-title class="process">  {{process}} </ion-title>
+  <br>
+<ion-list>
+    <ion-item *ngFor=" let champ of champs">
+        <ion-label position="floating" color="medium">{{champ}}</ion-label>
+        <ion-input type="text" [(ngModel)]="jsondata.variables[champ].value"> </ion-input>
+      </ion-item>
+             
+    </ion-list>
+
+
+    <ion-row>
+        <ion-col class="signup-col">
+          <ion-button class="submit-btn1" color="secondary"  type="submit" (click)="add()" >Envoyer  &nbsp; <ion-icon name="add-circle"></ion-icon></ion-button>
+        </ion-col>
+      </ion-row>
+    
+    </ion-content>
+ 

@@ -1,0 +1,38 @@
+<ion-content class="login-content" >
+  <ion-card style="height:97% ;">
+    <div class="login-box">
+      <div >
+        <div class="circular--portrait">
+          <img src="assets/imgs/isi.png">
+        </div>
+       
+        <ion-row>
+          <ion-col>
+            <ion-list inset>
+
+              <ion-item expand="block">
+
+               <ion-label><ion-icon name="person-outline"></ion-icon></ion-label>  
+               <ion-input  placeholder="Login"  type="email" [(ngModel)]="email" required></ion-input>
+              </ion-item>
+
+              <ion-item expand="block">
+                <ion-label><ion-icon name="pencil-outline"></ion-icon></ion-label> 
+                <ion-input type="password" placeholder="Password" name="password" type="password" [(ngModel)]="password" required></ion-input>
+              </ion-item>
+
+            </ion-list>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="signup-col">
+            <ion-button type="submit" color="secondary" expand="block" (click)="myLogIn()">Sign In</ion-button>
+          </ion-col>
+        </ion-row>
+
+      </div>
+    </div>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,94 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.box{
+  color: #07b4af;
+  border: solid;
+  border-radius: 10px; 
+  text-align: center;
+}
+.title{
+  text-align: left;
+}
+.t{
+  color:#07b4af;
+  font-weight: bold;
+}
+.submit-btn{
+  background:#07b4af;
+}
+.circular--square {
+  border-radius: 50%;
+}
+.circular--square {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+.logout{
+  color:	#07b4af;
+}
+
+.first{
+height: 10px;
+width: 100%;
+background: #ddd;
+border-radius: 10px;
+
+}
+.second{
+height: 10px;
+background: #009200;
+border-radius: 10px;
+}
+.danger{
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+.success{
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+}
+.green{
+  color: green;
+}
+.cercle {
+  width: 130px;
+  height: 100px;
+  //border-radius: 120px;
+  background: 	#07b4af;
+  text-align: center;
+}
+.espace {
+  width: 100%;
+  height: 100px;
+  margin:0; padding:0;
+}

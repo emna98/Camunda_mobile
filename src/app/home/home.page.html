@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="float:center; color: darkgrey;">
+      Bienvenue {{nom}} 
+      <ion-button style="float: right;" type="submit" color="secondary" (click)="logout()">Log Out <ion-icon name="log-out"></ion-icon></ion-button>
+    </ion-title> 
+  </ion-toolbar>
+</ion-header>
+<ion-toolbar color="light">
+
+<div style="margin-left: 30%;">
+  <span  style="font-style: oblique 40deg; font-family: Helvetica, Arial, sans-serif; color: darkgrey;">Tache(s)</span>
+   <ion-toggle  [(ngModel)]="test" (click)="setTest(true)" slot="secondary"></ion-toggle> 
+  <span  style="font-style: oblique 40deg; font-family: Helvetica, Arial, sans-serif; color: darkgrey;">Process</span> 
+  </div> 
+
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <div *ngIf="test==true">
+<h4 style="font-style: oblique 40deg; font-family: Helvetica, Arial, sans-serif; color: darkgrey;"> &nbsp;  Process: </h4> <hr>
+<ion-item class="box" *ngIf="tailleProcess==0" >
+  <ion-label>Vous n'avez pas des process pour le moment </ion-label> 
+
+</ion-item>
+  <div  *ngFor=" let pro of listprocess">
+
+    <ion-list >
+    
+        <ion-item class="box" >
+          <ion-label [routerLink]="['/process/' + pro.key]"> {{ pro.name}} </ion-label> 
+      </ion-item>
+     
+    </ion-list>
+    
+  </div>
+</div>
+<div *ngIf="test==false">
+<h4 style="font-style: oblique 40deg; font-family: Helvetica, Arial, sans-serif; color: darkgrey;"> &nbsp;  Taches: </h4> <hr>
+<ion-item class="box" *ngIf="tailleTask==0" >
+  <ion-label>Vous n'avez pas des taches pour le moment</ion-label> 
+
+</ion-item>
+  <div  *ngFor=" let task of listtask">
+
+    <ion-list >
+     
+        <ion-item class="box" >
+          <ion-label [routerLink]="['/task/' + task.id]"> {{ task.name}} </ion-label> 
+  
+      </ion-item>
+      
+    </ion-list>
+
+  </div> 
+</div>
+</ion-content>

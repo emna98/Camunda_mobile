@@ -1,0 +1,18 @@
+{
+    "/camunda/*": {
+      "target": "http://digitalisi.tn:8080/engine-rest/",
+      "changeOrigin": true,
+      "secure": false,
+      "logLevel": "debug",
+      "pathRewrite": {"^/camunda" : ""}
+    },
+    
+    "/form/{id}/*": {
+      "target": "http://digitalisi.tn:8080/engine-rest/process-definition",
+      "changeOrigin": true,
+      "secure": false,
+      "logLevel": "debug"
+      
+    }
+    
+  }
